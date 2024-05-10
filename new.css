@@ -1,0 +1,67 @@
+body {
+    overflow: hidden ;
+}
+/* Style for the title */
+.titlepart h2  {
+    font-size: 26px;
+    text-align: center;
+    color: #333; /* Default text color */
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color changes */
+  }
+
+  .titlepart h2:hover {
+    color: yellow; /* Text color on hover */
+  }
+  
+  /* Style for the fill effect */
+  .titlepart h2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background-color: black; /* Color of the fill */
+    z-index: -1; /* Place behind the text */
+    transition: width 0.7s ease; /* Smooth transition for fill effect */
+  }
+  
+  /* Hover effect */
+  .titlepart h2:hover::after {
+    width: 100%; /* Fill width on hover */
+  }
+  
+.titlepart nav {
+    background: blue;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.titlepart nav li {
+    display: inline;
+    margin-left: 20px;
+    background: rgb(255, 2, 65);
+    color: white;
+
+    padding: 6px;
+    
+}
+
+.titlepart nav li:hover {
+    color: blue;
+    background: white;
+    cursor: pointer;
+}
+
+
+.rankcc {
+    height: 300px;
+    width: 100%;
+}
+
+.card-rank-predictor  {
+    height: 1000px;
+}
